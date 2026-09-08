@@ -1,0 +1,8 @@
+node_modules/
+playwright-report/
+test-results/
+saucedemo-playwright-bdd/node_modules/
+saucedemo-playwright-bdd/playwright-report/
+saucedemo-playwright-bdd/test-results/
+saucedemo-playwright-bdd/dist/
+.env

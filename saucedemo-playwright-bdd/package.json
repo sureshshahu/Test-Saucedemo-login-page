@@ -1,0 +1,21 @@
+{
+  "name": "saucedemo-playwright-bdd",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript + BDD Cucumber + POM framework for SauceDemo login",
+  "scripts": {
+    "test": "cucumber-js --config cucumber.cjs",
+    "test:playwright": "playwright test",
+    "test:headed": "HEADLESS=false cucumber-js --config cucumber.cjs",
+    "report:generate": "ts-node src/support/generate-report.ts",
+    "test:report": "npm run test; npm run report:generate",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.9.0",
+    "@playwright/test": "^1.47.0",
+    "@types/node": "^20.14.10",
+    "multiple-cucumber-html-reporter": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
